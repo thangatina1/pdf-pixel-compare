@@ -1,5 +1,5 @@
 import comparePdf from 'compare-pdf';
-// import fileUpload from 'express-fileUpload';
+import fileUpload from 'express-fileUpload';
 // app.use(fileUpload)
 const routes = (app) => {
     
@@ -67,12 +67,6 @@ function setCroppoing(pageInd, width, height, xCor, yCor){
         }
     }
     
-};
-
-function setIndexes(pageIndex){
-
-    return pageIndex
-
 };
 
 

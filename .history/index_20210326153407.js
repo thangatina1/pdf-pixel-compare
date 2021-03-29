@@ -1,6 +1,6 @@
-import express from "express";
-import routes from "./src/routes/crmRoutes.js";
-import fileUpload from "express-fileupload";
+import express from 'express';
+import routes from './src/routes/crmRoutes.js';
+import fileUpload from "express-fileUpload";
 
 
 const app = express();

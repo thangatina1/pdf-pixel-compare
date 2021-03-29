@@ -1,5 +1,5 @@
 import comparePdf from 'compare-pdf';
-// import fileUpload from 'express-fileUpload';
+import fileUpload from 'express-fileUpload';
 // app.use(fileUpload)
 const routes = (app) => {
     
@@ -46,32 +46,7 @@ async function compare(baseline, actual){
     return comparisonResults;
 };
 
-function setMask(pageInd, xStart, xEnd, yStart, yEnd){
-    
-    return { 
-        "pageIndex": pageInd, 
-        "coordinates": { x0: xStart, y0: xEnd, x1: yStart, y1: yEnd } 
-    }
-    
-};
-
-function setCroppoing(pageInd, width, height, xCor, yCor){
-
-    return {
-        "pageIndex": pageInd,
-        "coordinates": {
-            "width": width,
-            "height": height,
-            "x": xCor,
-            "y": yCor
-        }
-    }
-    
-};
-
-function setIndexes(pageIndex){
-
-    return pageIndex
+function setMask(){
 
 };
 
